@@ -90,6 +90,9 @@
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
   .btn.primary {
     background: var(--accent);
@@ -99,10 +102,35 @@
     background: var(--card);
     color: var(--text);
   }
+  .signup {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .signup input[type="email"] {
+    padding: 14px 20px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 1rem;
+    font-family: inherit;
+    min-width: 240px;
+  }
+  .signup input[type="email"]:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
   .status-note {
     color: var(--muted);
     font-size: 0.85rem;
     margin-top: 16px;
+  }
+  .fine-print {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 12px;
   }
   .screenshot {
     display: flex;
@@ -184,8 +212,17 @@
       color with lab-grade CIELAB + ΔE2000 color science — instead of asking
       you to eyeball a match against a printed chart.
     </p>
-    <div class="cta-row">
-      <a class="btn primary" href="mailto:obandovic@gmail.com?subject=Chrometry%20early%20access">Request early access</a>
+    <form class="signup" action="https://formsubmit.co/obandovic@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+      <!-- honeypot: hidden from real users, bots that autofill it get silently discarded -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="Chrometry early access request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://chrometry.app/thanks.html">
+      <button type="submit" class="btn primary">Request early access</button>
+    </form>
+    <p class="fine-print">We'll only email you about Chrometry access — no spam, no list sales.</p>
+    <div class="cta-row" style="margin-top: 12px;">
       <a class="btn secondary" href="/support.html">Support</a>
     </div>
     <p class="status-note">Currently in limited testing — not yet on the App Store.</p>
