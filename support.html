@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Chrometry</title>
+<meta name="description" content="Get help with Chrometry: scanning tips, kit compatibility, calibration, trial and purchase questions.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #0a84ff;
+    --border: #e5e5ea;
+    --card: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --text: #f5f5f7;
+      --muted: #98989d;
+      --accent: #409cff;
+      --border: #2c2c2e;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 8px;
+  }
+  header a.home {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 16px 0 24px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 1.25em; }
+  li { margin-bottom: 6px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .faq {
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .faq:first-of-type { border-top: none; }
+  .faq dt {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .faq dd {
+    margin: 0;
+    color: var(--text);
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="home" href="/">Chrometry</a>
+  </header>
+  <h1>Support</h1>
+  <p>Need help with Chrometry? Start here.</p>
+
+  <div class="callout">
+    <!-- TODO: swap for a dedicated support address (e.g. support@chrometry.app)
+         before publishing, so requests don't land in the personal inbox. -->
+    <strong>Email:</strong> <a href="mailto:obandovic@gmail.com">obandovic@gmail.com</a><br>
+    We read every message and aim to reply within a few business days.
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <dl>
+    <div class="faq">
+      <dt>Why did my scan come back with low confidence / no reading?</dt>
+      <dd>Chrometry deliberately refuses to guess when it isn't confident in
+      a reading — this is by design, not a bug. Low light, glare, a strip
+      held at an angle, or a strip photographed too far away are the most
+      common causes. Try retaking the photo in even lighting, filling the
+      guide frame with the strip, and holding the phone steady and parallel
+      to the strip.</dd>
+    </div>
+    <div class="faq">
+      <dt>How does Chrometry read the strip's colors?</dt>
+      <dd>It photographs your used test strip, measures each reactive pad's
+      actual color, and compares it against a calibrated reference using
+      CIELAB color science (the same math used in professional
+      colorimeters) — rather than relying on you to eyeball a match against
+      a printed chart.</dd>
+    </div>
+    <div class="faq">
+      <dt>Does Chrometry work with my test strip brand?</dt>
+      <dd>Chrometry supports a growing catalog of test kits. Check the
+      in-app kit picker (Settings → Test Kits, or during setup) for the
+      current list. Don't see your kit? Use "Configure Custom" to set it up
+      manually, or email us the brand/model and we'll consider adding it.</dd>
+    </div>
+    <div class="faq">
+      <dt>Is my data private?</dt>
+      <dd>Yes — everything happens on your device. No account, no cloud
+      upload, no analytics. See our <a href="/privacy.html">Privacy
+      Policy</a> for full detail.</dd>
+    </div>
+    <div class="faq">
+      <dt>How do I calibrate my kit for more accurate results?</dt>
+      <dd>Go to Settings → Calibration. Chrometry can learn a correction
+      from a couple of strips you've already read and corrected, which
+      improves accuracy for your specific kit and lighting over time.</dd>
+    </div>
+    <div class="faq">
+      <dt>How does the free trial work?</dt>
+      <dd>New installs get 3 free scans or 14 days, whichever lasts longer.
+      After that, Chrometry Premium unlocks unlimited scans and custom kit
+      configuration — monthly, annual, or a one-time lifetime purchase.</dd>
+    </div>
+    <div class="faq">
+      <dt>How do I restore a purchase on a new device?</dt>
+      <dd>Settings → Restore Purchases. This uses Apple's App Store account,
+      so make sure you're signed into the same Apple ID you purchased
+      with.</dd>
+    </div>
+    <div class="faq">
+      <dt>Is the drinking-water testing feature a substitute for a certified lab?</dt>
+      <dd>No. Chrometry's drinking-water readings are advisory and meant to
+      help you understand your water day-to-day — for any safety concern
+      (especially health-sensitive situations like infant formula or private
+      well testing), confirm with a certified lab or your local water
+      utility.</dd>
+    </div>
+  </dl>
+
+  <h2>Something else?</h2>
+  <p>Email <a href="mailto:obandovic@gmail.com">obandovic@gmail.com</a> with:</p>
+  <ul>
+    <li>What you were trying to do</li>
+    <li>What happened instead</li>
+    <li>Your device model and iOS version (Settings → General → About)</li>
+    <li>A screenshot, if relevant</li>
+  </ul>
+  <p>That's usually enough for us to help or fix it.</p>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a> · <a href="/">Chrometry Home</a>
+  </footer>
+</div>
+</body>
+</html>
